@@ -1,0 +1,8 @@
+/* src/components/ChatMessage/ChatMessage.css */
+.chat-message {
+  margin: 5px 0;
+}
+
+.chat-message strong {
+  color: #007bff;
+}
