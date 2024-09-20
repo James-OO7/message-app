@@ -15,6 +15,10 @@ function App() {
       setChat((prevChat) => [...prevChat, message]);
     });
 
+    subscribeToChatHistory((history) => {
+      setChat(history);
+    });
+
     return () => unsubscribeFromMessages();
   }, []);
 

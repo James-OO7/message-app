@@ -12,6 +12,12 @@ export const subscribeToMessages = (callback) => {
   });
 };
 
+export const subscribeToChatHistory = (callback) => {
+  socket.on('chatHistory', (history) => {
+    callback(history);
+  });
+};
+
 export const unsubscribeFromMessages = () => {
   socket.off('chatMessage');
 };
