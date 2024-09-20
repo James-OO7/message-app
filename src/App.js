@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div className="App">
-      <h2>Socket.io Chat App</h2>
+      <h2>James Chat</h2>
       {!isUserSet ? (
         <div className="username-container">
           <input
