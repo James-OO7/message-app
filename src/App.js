@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import ChatBox from './components/ChatBox';
 import ChatInput from './components/ChatInput';
-import { sendMessage, subscribeToMessages, unsubscribeFromMessages } from './socket';
+import { sendMessage, subscribeToMessages, subscribeToChatHistory, unsubscribeFromMessages } from './socket';
 
 function App() {
   const [chat, setChat] = useState([]);
